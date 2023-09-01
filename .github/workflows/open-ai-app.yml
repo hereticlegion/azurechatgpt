@@ -24,6 +24,7 @@ jobs:
 
       - name: ⚙️ npm install and build
         run: |
+          echo test
           cd ./src
           npm install
           npm run build --if-present
