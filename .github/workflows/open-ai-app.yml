@@ -50,7 +50,7 @@ jobs:
           ls -al ..
           ls -al ./src
           ls ./src/.next
-          ls ./site-deploy
+          ls -al ./site-deploy
 
       - name: ⬆️ Publish Next Application artifact
         uses: actions/upload-artifact@v3
