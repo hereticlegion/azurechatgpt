@@ -44,7 +44,7 @@ jobs:
         run: |
           cd ./site-deploy
           zip Nextjs-site.zip ./* .next -qr      
-          
+
       - name: 🔍 Diagnostics
         run: |
           ls -al ..
@@ -57,6 +57,10 @@ jobs:
         with:
           name: Nextjs-site
           path: ./site-deploy/Nextjs-site.zip
+
+      - name: Ende
+        run: |
+          echo Abschnitt_Ende
 
   deploy:
     runs-on: ubuntu-latest
