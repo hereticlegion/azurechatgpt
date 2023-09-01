@@ -27,7 +27,8 @@ jobs:
           cd ./src
           npm install
           npm run build --if-present
-          cd ..
+          cd .. 
+          pwd
 
       - name: 📂 Copy standalone into the root
         run: cp -R ./src/.next/standalone ./site-deploy
@@ -45,7 +46,8 @@ jobs:
           
       - name: 🔍 Diagnostics
         run: |
-          ls ./src
+          ls -al ..
+          ls -al ./src
           ls ./src/.next
           ls ./site-deploy
 
